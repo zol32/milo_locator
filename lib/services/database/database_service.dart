@@ -14,6 +14,6 @@ class DatabaseService extends BaseDatabaseService {
         .collection('Status')
         .doc("TiEzcepAAAzbdYj0bxyW")
         .snapshots()
-        .map((snap) => User.fromSnapshot(snap));
+        .map((snap) => Status.fromSnapshot(snap));
   }
 }

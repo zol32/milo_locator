@@ -11,7 +11,7 @@ class DatabaseService extends BaseDatabaseService {
   Stream<dynamic> getStatus() {
     print('Getting status from DB');
     return _firebaseFirestore
-        .collection('Status')
+        .collection('status')
         .doc("TiEzcepAAAzbdYj0bxyW")
         .snapshots()
         .map((snap) => Status.fromSnapshot(snap));

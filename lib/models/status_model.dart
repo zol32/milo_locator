@@ -1,11 +1,9 @@
-import 'dart:ffi';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 
 class Status extends Equatable {
   // final String? id;
-  final Bool inGarage;
+  final bool inGarage;
 
   const Status({
     // this.id,

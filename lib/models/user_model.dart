@@ -4,26 +4,26 @@ import 'package:equatable/equatable.dart';
 class User extends Equatable {
   final String? id;
   final String name;
-  final String location;
+  // final String location;
 
   const User({
     this.id,
     required this.name,
-    required this.location,
+    // required this.location,
   });
 
   @override
   List<Object?> get props => [
         id,
         name,
-        location,
+        // location,
       ];
 
   static User fromSnapshot(DocumentSnapshot snap) {
     User user = User(
       id: snap.id,
       name: snap['name'],
-      location: snap['location'],
+      // location: snap['location'],
     );
     return user;
   }
@@ -31,19 +31,19 @@ class User extends Equatable {
   Map<String, dynamic> toMap() {
     return {
       'name': name,
-      'location': location,
+      // 'location': location,
     };
   }
 
   User copyWith({
     String? id,
     String? name,
-    String? location,
+    // String? location,
   }) {
     return User(
       id: id ?? this.id,
       name: name ?? this.name,
-      location: location ?? this.location,
+      // location: location ?? this.location,
     );
   }
 }

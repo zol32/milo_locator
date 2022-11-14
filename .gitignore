@@ -52,3 +52,5 @@ macos/
 linux/
 web/
 windows/
+
+.metals/
